@@ -10,3 +10,6 @@ __pycache__/
 
 # Ignore the log file
 api.log
+
+# Ignore the notebooks
+main/notebooks/
