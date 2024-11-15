@@ -1,0 +1,14 @@
+services:
+  tech-mastery-api:
+    image: techmastery-api:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - API_USERNAME
+      - API_PASSWORD
+    volumes:
+      - .:/app
+    command: uvicorn main.api.tech_mastery_api:app --host 0.0.0.0 --port 8000

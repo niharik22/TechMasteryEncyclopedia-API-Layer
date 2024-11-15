@@ -1,0 +1,21 @@
+
+env: "LOCAL"
+
+
+# Logging settings
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  log_file: "api.log"  # File where logs will be saved
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  log_to_console: true  # Enable/Disable logging to the console
+
+
+mongo:
+  database_name: "linkedindb_prod"
+  analysis_database_name: "linkedindb_prod"
+#  analysis_database_name: "analysisdb_prod"
+  analysis_collection_bigrams: "bigrams"
+  collection_raw: "raw"
+  collection_clean: "clean"
+  collection_qualified: "qualified"
+  test_mode: False

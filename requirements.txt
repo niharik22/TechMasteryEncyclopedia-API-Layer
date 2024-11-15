@@ -1,0 +1,26 @@
+# FastAPI framework
+fastapi
+
+# ASGI server for FastAPI
+uvicorn
+
+# MongoDB driver
+pymongo
+
+# DNS support for MongoDB URIs
+dnspython
+
+# YAML file parsing
+PyYAML
+
+# Data validation and parsing
+pydantic
+
+# Environment variable management
+python-dotenv
+
+# CORS support in FastAPI
+fastapi-cors
+
+# For HTTP Basic authentication
+passlib

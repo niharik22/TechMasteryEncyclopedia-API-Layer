@@ -1,0 +1,12 @@
+# Ignore virtual environments
+venv/
+
+# Ignore environment variables file
+.env
+
+# Ignore Python byte-compiled files
+__pycache__/
+*.pyc
+
+# Ignore the log file
+api.log
