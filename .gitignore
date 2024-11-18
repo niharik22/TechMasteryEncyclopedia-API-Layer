@@ -13,3 +13,7 @@ api.log
 
 # Ignore the notebooks
 main/notebooks/
+
+#Ignore aws keys
+*.ppk
+tme-webserver-key.pem

@@ -124,14 +124,9 @@ def get_country_details(request_data: CountryOnlyRequest, credentials: HTTPBasic
 
 # API Type 3: Takes a JSON object and returns roles
 @app.post("/details/roles")
-def get_role_details(request_data: RolesRequestData, credentials: HTTPBasicCredentials = Depends(authenticate_user)):
-    if request_data.country == CountryEnum.usa and request_data.state not in StateEnumUSA.__members__.values():
-        return {"error": "Invalid state for USA"}
-    elif request_data.country == CountryEnum.canada and request_data.state not in StateEnumCanada.__members__.values():
-        return {"error": "Invalid province for Canada"}
+def get_role_details(request_data: CountryOnlyRequest, credentials: HTTPBasicCredentials = Depends(authenticate_user)):
 
     roles_data = data_processor.fetch_distinct_roles(
-        country=request_data.country.value,
-        state=request_data.state
+        country=request_data.country.value
     )
     return {"roles": roles_data}

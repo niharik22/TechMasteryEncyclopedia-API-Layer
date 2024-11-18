@@ -149,30 +149,29 @@ class QualifiedService:
             logging.exception("Error querying record count grouped by state for country: %s", country)
             return []
 
-    def get_roles_by_country_and_state(self, country: str, state: str) -> List[str]:
+    def get_roles_by_country_and_state(self, country: str) -> List[str]:
         """
-        Queries the 'qualified' collection to get all distinct roles for a specific country and state.
+        Queries the 'qualified' collection to get all distinct roles for a specific country.
 
         Args:
             country (str): The country to filter by.
-            state (str): The state to filter by.
 
         Returns:
-            List[str]: A list of distinct roles available in the given country and state.
+            List[str]: A list of distinct roles available in the given country.
         """
         try:
             # Switch to the 'qualified' collection
-            self.mdb_client.change_database_and_collection(new_collection_name="qualified")
+            self.mdb_client.change_database_and_collection(new_collection_name="bigrams")
 
             # Query to filter by country and state
-            query = {"country": country, "state": state}
+            query = {"country": country}
 
             # Use the distinct method to get unique roles
             roles = self.mdb_client.collection.distinct("role", query)
 
-            logging.info("Successfully fetched distinct roles for country: %s and state: %s", country, state)
+            logging.info("Successfully fetched distinct roles for country: %s", country)
             return roles
 
         except Exception as e:
-            logging.exception("Error querying distinct roles for country: %s and state: %s", country, state)
+            logging.exception("Error querying distinct roles for country: %s", country)
             return []

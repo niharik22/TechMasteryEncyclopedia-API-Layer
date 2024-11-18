@@ -365,22 +365,21 @@ class DataProcessor:
         logging.info(f"Processed state frequency data for country: {country}")
         return processed_data
 
-    def fetch_distinct_roles(self, country: str, state: str) -> List[str]:
+    def fetch_distinct_roles(self, country: str) -> List[str]:
         """
-        Fetches distinct roles for the given country and state using the QualifiedService.
+        Fetches distinct roles for the given country using the QualifiedService.
 
         Args:
             country (str): The country to filter by.
-            state (str): The state to filter by.
 
         Returns:
-            List[str]: A list of distinct roles available in the specified country and state.
+            List[str]: A list of distinct roles available in the specified country.
         """
         try:
-            roles = self.qualified_service.get_roles_by_country_and_state(country, state)
-            logging.info(f"Fetched distinct roles for country: {country}, state: {state}")
+            roles = self.qualified_service.get_roles_by_country_and_state(country)
+            logging.info(f"Fetched distinct roles for country: {country}")
             return roles
         except Exception as e:
-            logging.exception(f"Error fetching distinct roles for country: {country}, state: {state}")
+            logging.exception(f"Error fetching distinct roles for country: {country}")
             return []
 

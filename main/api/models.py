@@ -77,18 +77,14 @@ class StateEnumCanada(str, Enum):
     YT = "YT"
     all = "All"
 
-class RoleEnum(str, Enum):
-    software_engineer = "Software Engineer"
-    data_scientist = "Data Scientist"
-    data_analyst = "Data Analyst"
-
-class CountryOnlyRequest(BaseModel):
-    country: CountryEnum
-
+# Role as a simple string
 class FullRequestData(BaseModel):
     country: CountryEnum
     state: str
-    role: RoleEnum
+    role: str  # Changed from RoleEnum to str
+
+class CountryOnlyRequest(BaseModel):
+    country: CountryEnum
 
 class RolesRequestData(BaseModel):
     country: CountryEnum
