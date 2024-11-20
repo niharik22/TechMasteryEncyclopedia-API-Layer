@@ -125,10 +125,7 @@ Handles data transformation and preparation for API responses.
 3. Transformation of these insights into standardized response formats suitable for API delivery
 4. Delivery of structured and enriched data through secure API endpoints for client consumption
 
-
-markdown
-Copy code
-### Testing & Quality Assurance
+### Testing 
 
 The API layer includes a comprehensive testing suite to ensure the functionality, reliability, and accuracy of all components. The testing framework uses `unittest` to cover various aspects of the service, including data retrieval and processing.
 
