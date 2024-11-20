@@ -37,6 +37,7 @@ The API Layer is built using **FastAPI** to provide seamless integration between
 
 ---
 
+
 #### Deployment and Hosting
 
 The **API Layer** has been containerized using **Docker** and is hosted on **AWS EC2**, ensuring consistent and reliable performance. This cloud-based infrastructure provides high availability and scalability, supporting the seamless integration and delivery of data insights to the presentation layer.
