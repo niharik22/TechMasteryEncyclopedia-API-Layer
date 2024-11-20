@@ -166,8 +166,8 @@ The API layer includes a comprehensive testing suite to ensure the functionality
    - **Education Data**: Checks the accuracy of education-related data retrieval and formatting.
    - **State Frequency Data**: Validates the correct grouping and percentage calculation of records by state.
    - **Role Retrieval**: Tests the distinct role retrieval functionality to ensure it returns expected results.
-   
-   ---
+
+---
 
 
 **Visit the Live Project**: [Link to the Website](https://techmasteryencyclopedia.com/)
