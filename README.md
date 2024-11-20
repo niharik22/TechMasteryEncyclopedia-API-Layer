@@ -15,34 +15,34 @@ The API Layer is built using **FastAPI** to provide seamless integration between
 - [Machine Learning Layer](https://github.com/niharik22/TechMasteryEncyclopedia-MachineLearning-Layer) - Advanced data analysis and model implementation.
 - [Presentation Layer](https://github.com/niharik22/TechMasteryEncyclopedia-Presentation-Layer) - User-friendly visualizations and dashboards.
 
----
-
-## Table of Contents
-1. [Deployment and Hosting](#deployment-and-hosting)
-2. [Security & Authentication](#security--authentication)
-3. [API Endpoints](#api-endpoints)
-   - [Root Endpoint](#1-root-endpoint)
-   - [Operations Details](#2-operations-details)
-   - [Education Details](#3-education-details)
-   - [Workplace Analysis](#4-workplace-analysis)
-   - [Country Information](#5-country-information)
-   - [Available Roles](#6-available-roles)
-4. [Data Processing Architecture](#data-processing-architecture)
-   - [Core Components](#core-components)
-   - [Data Flow](#data-flow)
-5. [Testing](#testing)
-   - [Testing Strategy](#testing-strategy)
-   - [Test Cases](#test-cases)
-6. [Visit the Live Project](#visit-the-live-project)
 
 ---
-
 
 #### Deployment and Hosting
 The **API Layer** has been containerized using **Docker** and is hosted on **AWS EC2**, ensuring consistent and reliable performance. This cloud-based infrastructure provides high availability and scalability, supporting the seamless integration and delivery of data insights to the presentation layer.
 
 - **Docker Implementation**: The entire API is fully containerized, facilitating efficient and standardized deployment.
 - **AWS EC2 Deployment**: Leveraging the power of AWS EC2 for cloud hosting, providing a robust environment for the API.
+---
+
+## Table of Contents
+1. [Security & Authentication](#security--authentication)
+2. [API Endpoints](#api-endpoints)
+   - [Root Endpoint](#1-root-endpoint)
+   - [Operations Details](#2-operations-details)
+   - [Education Details](#3-education-details)
+   - [Workplace Analysis](#4-workplace-analysis)
+   - [Country Information](#5-country-information)
+   - [Available Roles](#6-available-roles)
+3. [Data Processing Architecture](#data-processing-architecture)
+   - [Core Components](#core-components)
+   - [Data Flow](#data-flow)
+4. [Testing](#testing)
+   - [Testing Strategy](#testing-strategy)
+   - [Test Cases](#test-cases)
+5. [Visit the Live Project](#visit-the-live-project)
+
+---
 
 
 ### Security & Authentication
