@@ -171,3 +171,5 @@ The API layer includes a comprehensive testing suite to ensure the functionality
 
 
 **Visit the Live Project**: [Link to the Website](https://techmasteryencyclopedia.com/)
+
+---
